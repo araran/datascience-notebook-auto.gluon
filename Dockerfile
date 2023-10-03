@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:latest
+FROM jupyter/datascience-notebook:python-3.10
 
 RUN mamba install --yes conda-forge autogluon && \
     mamba clean --all -f -y && \
