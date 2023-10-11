@@ -1,4 +1,4 @@
-FROM gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/datascience:10-rebuild-stack-tf-image-with-tf-cudnn-8-5
+FROM cschranz/gpu-jupyter:v1.5_cuda-11.6_ubuntu-20.04_slim
 
 RUN mamba install --yes 'autogluon' && \
     mamba clean --all -f -y && \
