@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:python-3.10
+FROM gitlab-registry.nrp-nautilus.io/prp/jupyter-stack/datascience:10-rebuild-stack-tf-image-with-tf-cudnn-8-5
 
 RUN mamba install --yes 'autogluon' && \
     mamba clean --all -f -y && \
